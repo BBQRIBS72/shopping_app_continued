@@ -16,7 +16,22 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
-final url = Uri.parse('<your-url>')
-http.post(url, ...)
+if (settings.name == '/') {
+    return child;
+}
+return FadeTransition(
+    opacity: animation,
+    child: child,
+);
+
+if (route.settings.name == '/') {
+    return child;
+}
+return FadeTransition(
+    opacity: animation,
+    child: child,
+);
+
+
 
 264
